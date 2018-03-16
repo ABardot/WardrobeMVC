@@ -1,0 +1,72 @@
+﻿@model WardrobeProject9.Models.Accessory
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Accessory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessorieName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessorieName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessoriePhoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessoriePhoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessorieColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessorieColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessorieSeason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessorieSeason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessorieOccasion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessorieOccasion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessorieType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessorieType)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
