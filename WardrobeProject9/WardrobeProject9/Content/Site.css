@@ -26,12 +26,18 @@ textarea {
 
 .navbar {
     background-color: #fff;
+   
 }
 
-.nav.navbar-nav i {
-    color: grey;
+.navbar a {
+color: grey !important;
 }
 
-.nav.navbar-nav i:hover {
-    color: #3B5998;
+.navbar a:hover {
+    color: #000 !important;
 }
+
+footer {
+    text-align: center;
+}
+
