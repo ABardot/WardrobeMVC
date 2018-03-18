@@ -45,11 +45,6 @@ footer {
     text-align: center;
 }
 
-/*.container.body-content {
-    box-shadow: 10px 10px 5px grey;
-    
-}*/
-
 .thumbnail {
     box-shadow: 10px 10px grey;
 }
@@ -68,7 +63,7 @@ footer {
 
 .fas.fa-wrench.fa-10x {
     height: 300px;
-   padding-left: 80px;
+   padding-left: 100px;
    padding-top: 80px;
 }
 
@@ -86,6 +81,6 @@ footer {
 .btn.btn-primary:hover {
     width: 80px;
     background-color: #87CEFA;
-    color: #fff;
+    color: #D2691E;
     border: thin;
 }
