@@ -5,10 +5,9 @@
 }
 
 /* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+/*.body-content {
+    
+}*/
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -24,6 +23,11 @@ textarea {
     max-width: 280px;
 }
 
+h2 {
+    text-align: center;
+}
+
+
 .navbar {
     background-color: #fff;
    
@@ -38,6 +42,19 @@ color: grey !important;
 }
 
 footer {
+    text-align: center;
+}
+
+.container.body-content {
+    box-shadow: 10px 10px 5px grey;
+    
+}
+
+/*.thumbnail {
+    box-shadow: 10px 10px grey;
+}*/
+
+.thumbnail h3, p{
     text-align: center;
 }
 

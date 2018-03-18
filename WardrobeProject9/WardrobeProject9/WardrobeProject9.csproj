@@ -198,6 +198,11 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\carImageOne.PNG" />
+    <Content Include="Content\images\carImageTwo.PNG" />
+    <Content Include="Content\images\hatCar.PNG" />
+    <Content Include="Content\images\sugarCarBack.jpg" />
+    <Content Include="Content\images\sugarSkull.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
