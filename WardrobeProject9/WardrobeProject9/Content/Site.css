@@ -87,8 +87,8 @@ footer {
     border: thin;
 }
 
-
 .row {
+    margin-top: 20px;
     margin-bottom: 50px;
     box-shadow: 5px 5px 5px grey;
 }
@@ -99,18 +99,61 @@ footer {
     content: "";
     display: block;
     position: absolute;
-    top: 10px;
+    top: 0px;
     bottom: 10px;
     right: 0;
     min-height: 60px;
 }
 
-p {
-  
-  
+.col-lg-4.wardrobeContent {
+    margin-top: 20px;
+   
 }
 
 .col-lg-4.wardrobeContent ul li {
-    font-size: 25px;
+    font-size: 20px;
     list-style-type: none;
 }
+
+.btn.btn-primary.wardrobeBtn {
+    width: 100px;
+    background-color: grey;
+    border: thin;
+}
+
+.btn.btn-primary.wardrobeBtn:hover {
+    width: 100px;
+    background-color: #87CEFA;
+    border: thin;
+    color: #D2691E;
+}
+
+.btn.btn-primary.wardrobeBtn a {
+    color: #fff;
+}
+
+.btn.btn-primary.wardrobeBtn a:hover {
+    color: #D2691E;
+    text-decoration: none;
+}
+
+.btn-group {
+    padding-top: 70px;
+    padding-left: 60px;
+    color: #000 !important;
+}
+
+.btn-group button {
+    background-color: #F4A460;
+}
+
+.btn-group button a {
+   color: #000;
+}
+
+.btn-group button:hover {
+    background-color: #F0E68C;
+    text-decoration: none;
+}
+
+
