@@ -45,16 +45,47 @@ footer {
     text-align: center;
 }
 
-.container.body-content {
+/*.container.body-content {
     box-shadow: 10px 10px 5px grey;
     
-}
-
-/*.thumbnail {
-    box-shadow: 10px 10px grey;
 }*/
 
-.thumbnail h3, p{
+.thumbnail {
+    box-shadow: 10px 10px grey;
+}
+
+.row.landing{
+    margin-top: 40px;
+}
+
+.thumbnail h2 {
     text-align: center;
 }
 
+.thumbnail img {
+    height: 300px;
+}
+
+.fas.fa-wrench.fa-10x {
+    height: 300px;
+   padding-left: 80px;
+   padding-top: 80px;
+}
+
+.caption {
+    text-align: center;
+}
+
+.btn.btn-primary {
+    width: 80px;
+    background-color: grey;
+    color: #000;
+    border: thin;
+}
+
+.btn.btn-primary:hover {
+    width: 80px;
+    background-color: #87CEFA;
+    color: #fff;
+    border: thin;
+}
