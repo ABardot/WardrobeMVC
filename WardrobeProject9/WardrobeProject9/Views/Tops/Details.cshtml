@@ -4,63 +4,194 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
 
-<div>
-    <h4>Top</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.TopName)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TopName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TopPhoto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TopPhoto)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TopColor)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TopColor)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TopSeason)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TopSeason)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TopOccasion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TopOccasion)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TopType)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TopType)
-        </dd>
-
-    </dl>
+<div class="container wardrobeIndex">
+    <div class="row">
+        <div class="col-lg-12 wardrobeHeader">
+            <h2>Top Details</h2>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<div class="container">
+    <div class="jumbotron">
+        <img src="@Html.DisplayFor(model => model.TopPhoto)" />
+    </div>
+    <div class="row">
+        <div class="col-lg-6 detailsImage">
+            <ul>
+                <li>
+                    Name:
+                </li>
+                <li>
+                    Color:
+                </li>
+                <li>
+                    Season:
+                </li>
+                <li>
+                    Occasion:
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-6 detailsImage">
+            <ul>
+                <li>
+                    @Html.DisplayFor(model => model.TopName)
+                </li>
+                <li>
+                    @Html.DisplayFor(model => model.TopColor)
+                </li>
+                <li>
+                    @Html.DisplayFor(model => model.TopSeason)
+                </li>
+                <li>
+                    @Html.DisplayFor(model => model.TopOccasion)
+                </li>
+            </ul>
+        </div>
+    </div>
+</div><!-- container End-->
+
+
+
+
+
+
+
+
+@*<dl class="dl-horizontal">
+                  <dd>
+                      <img src="@Html.DisplayFor(model => model.TopPhoto)" style="height: 200px;" />
+                 </dd>
+                  <dt>
+                      Name:
+                  </dt>
+                  <dd>
+                      @Html.DisplayFor(model => model.TopName)
+                  </dd>
+                  <dt>
+                      Color:
+                  </dt>
+
+                  <dd>
+                      @Html.DisplayFor(model => model.TopColor)
+                  </dd>
+
+                  <dt>
+                     Season:
+                  </dt>
+
+                  <dd>
+                      @Html.DisplayFor(model => model.TopSeason)
+                  </dd>
+
+                  <dt>
+                     Occasion:
+                  </dt>
+
+                  <dd>
+                      @Html.DisplayFor(model => model.TopOccasion)
+                  </dd>
+
+                  <dt>
+                      Top Type:
+                  </dt>
+
+                  <dd>
+                      @Html.DisplayFor(model => model.TopType)
+                  </dd>
+
+              </dl>
+          </div>
+          <p>
+              @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
+              @Html.ActionLink("Back to List", "Index")
+          </p>
+      </div>
+    </div>*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<div>
+        <h4>Top</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.TopName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TopName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TopPhoto)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TopPhoto)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TopColor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TopColor)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TopSeason)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TopSeason)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TopOccasion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TopOccasion)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TopType)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TopType)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@

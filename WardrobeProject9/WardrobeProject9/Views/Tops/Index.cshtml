@@ -4,13 +4,15 @@
     ViewBag.Title = "Index";
 }
 
-    <h2>Wardrobe</h2>
-<br />
-  
-<button class="btn btn-primary wardrobeBtn">@Html.ActionLink("Create New", "Create")</button> 
-  
 
 <div class="container wardrobeIndex">
+    <div class="row">
+        <div class="col-lg-12 wardrobeHeader">
+            <h2>Wardrobe</h2>
+            <br />
+            <button class="btn btn-primary wardrobeBtn">@Html.ActionLink("Create New", "Create")</button>
+        </div>
+    </div>
     @foreach (var item in Model)
     {
         <div class="row vdivide">
@@ -44,6 +46,6 @@
                 </div>
             </div>
         </div><!-- row vdivide End -->
-     }
-    </div><!-- container End-->
+    }
+</div><!-- container End-->
 

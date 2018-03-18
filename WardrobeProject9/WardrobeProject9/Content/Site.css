@@ -1,7 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #fff;
+    background-color: whitesmoke;
     
 }
 
@@ -87,6 +87,13 @@ footer {
     border: thin;
 }
 
+/* Index Wardrobe */
+
+.col-lg-12.wardrobeHeader {
+    padding-bottom: 20px;
+    
+}
+
 .row {
     margin-top: 20px;
     margin-bottom: 50px;
@@ -115,7 +122,8 @@ footer {
     list-style-type: none;
 }
 
-.btn.btn-primary.wardrobeBtn {
+.btn.btn-primary.wardrobeBtn
+{   margin-left: 510px;
     width: 100px;
     background-color: grey;
     border: thin;
@@ -129,7 +137,7 @@ footer {
 }
 
 .btn.btn-primary.wardrobeBtn a {
-    color: #fff;
+    color: #000;
 }
 
 .btn.btn-primary.wardrobeBtn a:hover {
@@ -156,4 +164,18 @@ footer {
     text-decoration: none;
 }
 
+/* Details */
+
+.jumbotron {
+    height: 500px;
+    background-color: grey;
+}
+
+.jumbotron img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    box-shadow: 5px 5px 5px grey;
+}
 
