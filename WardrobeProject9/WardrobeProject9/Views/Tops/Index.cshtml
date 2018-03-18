@@ -4,52 +4,52 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Wardrobe</h2>
+    <h2>Wardrobe</h2>
 <br />
-<p>
-        @Html.ActionLink("Create New", "Create")
+    <p>
+     @Html.ActionLink("Create New", "Create")
     </p>
 
-<div class="container">
+<div class="container wardrobeIndex">
     @foreach (var item in Model)
     {
         <div class="row vdivide">
 
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <img src="@Html.DisplayFor(modelItem => item.TopPhoto)" style="height: 200px;" />
             </div>
-            <div class="col-lg-6 wardrobeContent">
+            <div class="col-lg-4 wardrobeContent">
                 <ul>
                     <li>
-                        <h3>
-                            @*<i class="fab fa-jenkins"></i>*@ @Html.DisplayFor(modelItem => item.TopName)
-                        </h3>
+                        <i class="far fa-hand-point-right"></i>  @Html.DisplayFor(modelItem => item.TopName)
                     </li>
                     <li>
-                        <h3>
-                            @Html.DisplayFor(modelItem => item.TopColor)
-                        </h3>
+                        
+
+
+                        <i class="far fa-hand-point-right"></i> @Html.DisplayFor(modelItem => item.TopColor)
+                        
                     </li>
                     <li>
-                        <h3>
-                            @Html.DisplayFor(modelItem => item.TopSeason)
-                        </h3>
+                        
+                        <i class="far fa-hand-point-right"></i> @Html.DisplayFor(modelItem => item.TopSeason)
+                       
                     </li>
                     <li>
-                        <h3>
-                            @Html.DisplayFor(model => item.TopOccasion)
-                        </h3>
+                        
+                        <i class="far fa-hand-point-right"></i>   @Html.DisplayFor(model => item.TopOccasion)
+                        
 
                     </li>
                     <li>
-                        <h3>
-                            @Html.DisplayFor(model => item.TopType)
-                        </h3>
+                       
+                        <i class="far fa-hand-point-right"></i> @Html.DisplayFor(model => item.TopType)
+                       
                     </li>
                 </ul>
            
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 @Html.ActionLink("Edit", "Edit", new { id = item.TopID }) |
                 @Html.ActionLink("Details", "Details", new { id = item.TopID }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.TopID })

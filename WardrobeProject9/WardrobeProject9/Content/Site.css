@@ -36,7 +36,7 @@ h2 {
 }
 
 .navbar a {
-color: grey !important;
+    color: grey !important;
 }
 
 .navbar a:hover {
@@ -87,9 +87,11 @@ footer {
     border: thin;
 }
 
-/*.col-lg-5.wardrobeImage {
 
-}*/
+.row {
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px grey;
+}
 
 .row.vdivide [class*='col-']:not(:last-child):after {
     background: grey;
@@ -97,9 +99,18 @@ footer {
     content: "";
     display: block;
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 10px;
+    bottom: 10px;
     right: 0;
-    min-height: 50px;
+    min-height: 60px;
 }
 
+p {
+  
+  
+}
+
+.col-lg-4.wardrobeContent ul li {
+    font-size: 25px;
+    list-style-type: none;
+}
