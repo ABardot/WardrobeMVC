@@ -4,60 +4,46 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessorieName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoriePhoto)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessorieColor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessorieSeason)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessorieOccasion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessorieType)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessorieName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessoriePhoto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessorieColor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessorieSeason)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessorieOccasion)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessorieType)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.AccessorieID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.AccessorieID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.AccessorieID })
-        </td>
-    </tr>
-}
-
-</table>
+<div class="container wardrobeIndex">
+    <div class="row">
+        <div class="col-lg-12 wardrobeHeader">
+            <h2>Accessory Wardrobe</h2>
+            <br />
+            <button class="btn btn-primary wardrobeBtn">@Html.ActionLink("Create New", "Create")</button>
+        </div>
+    </div>
+    @foreach (var item in Model)
+    {
+        <div class="row vdivide">
+            <div class="col-lg-4">
+                <img src="@Html.DisplayFor(modelItem => item.AccessoriePhoto)" style="height: 200px;" />
+            </div>
+            <div class="col-lg-4 wardrobeContent">
+                <ul>
+                    <li>
+                        <i class="far fa-hand-point-right"></i> @Html.DisplayFor(modelItem => item.AccessorieName)
+                    </li>
+                    <li>
+                        <i class="far fa-hand-point-right"></i> @Html.DisplayFor(modelItem => item.AccessorieColor)
+                    </li>
+                    <li>
+                        <i class="far fa-hand-point-right"></i> @Html.DisplayFor(modelItem => item.AccessorieSeason)
+                    </li>
+                    <li>
+                        <i class="far fa-hand-point-right"></i> @Html.DisplayFor(model => item.AccessorieOccasion)
+                    </li>
+                    <li>
+                        <i class="far fa-hand-point-right"></i> @Html.DisplayFor(model => item.AccessorieType)
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default">@Html.ActionLink("Edit", "Edit", new { id = item.AccessorieID })</button>
+                    <button type="button" class="btn btn-default">@Html.ActionLink("Details", "Details", new { id = item.AccessorieID })</button>
+                    <button type="button" class="btn btn-default">@Html.ActionLink("Delete", "Delete", new { id = item.AccessorieID })</button>
+                </div>
+            </div>
+        </div><!-- row vdivide End -->
+    }
+</div><!-- container End-->
