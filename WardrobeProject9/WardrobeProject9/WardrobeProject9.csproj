@@ -202,11 +202,13 @@
     <Content Include="Content\images\camo.jpg" />
     <Content Include="Content\images\carImageOne.PNG" />
     <Content Include="Content\images\carImageTwo.PNG" />
+    <Content Include="Content\images\docMarten.jpg" />
     <Content Include="Content\images\hatCar.PNG" />
     <Content Include="Content\images\hoodie.PNG" />
     <Content Include="Content\images\jeans.jpg" />
     <Content Include="Content\images\mauiShorts.jpg" />
     <Content Include="Content\images\outfitMain.jpg" />
+    <Content Include="Content\images\puma.jpg" />
     <Content Include="Content\images\sugarCarBack.jpg" />
     <Content Include="Content\images\sugarSkull.jpg" />
     <Content Include="Content\images\vans.jpg" />
