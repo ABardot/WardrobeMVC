@@ -48,7 +48,8 @@ footer {
 }
 
 .thumbnail {
-    box-shadow: 10px 10px grey;
+    box-shadow: 5px 5px 5px grey;
+    height: 500px;
 }
 
 .row.landing{
@@ -61,6 +62,7 @@ footer {
 
 .thumbnail img {
     height: 300px;
+    padding-top: 10px;
 }
 
 .fas.fa-wrench.fa-10x {
@@ -96,8 +98,8 @@ footer {
 
 .row {
     margin-top: 20px;
-    margin-bottom: 50px;
-    box-shadow: 5px 5px 5px grey;
+    margin-bottom: 0px;
+  
 }
 
 .row.vdivide [class*='col-']:not(:last-child):after {
@@ -107,7 +109,7 @@ footer {
     display: block;
     position: absolute;
     top: 0px;
-    bottom: 10px;
+    bottom: 0px;
     right: 0;
     min-height: 60px;
 }
@@ -166,9 +168,15 @@ footer {
 
 /* Details */
 
+.container.details ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
 .jumbotron {
-    height: 500px;
+    height: 600px;
     background-color: grey;
+    margin-top: 10px;
 }
 
 .jumbotron img {
@@ -176,6 +184,13 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px #000;
 }
 
+.col-lg-6.detailsImage ul {
+    text-align: center;
+}
+
+#deatilsBtn {
+   padding-left: 450px;
+}
