@@ -167,7 +167,7 @@ footer {
 
 /* Details */
 
-.container.details ul {
+.container-fluid.details ul {
     list-style-type: none;
     font-size: 20px;
 }

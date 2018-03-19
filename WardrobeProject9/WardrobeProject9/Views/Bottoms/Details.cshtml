@@ -4,63 +4,54 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<div class="container-fluid wardrobeIndex">
+    <div class="row">
+        <div class="col-lg-12 wardrobeHeader">
+            <h2>Bottom Details</h2>
 
-<div>
-    <h4>Bottom</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.BottomName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BottomName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BottomPhoto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BottomPhoto)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BottomColor)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BottomColor)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BottomSeason)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BottomSeason)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BottomOccasion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BottomOccasion)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BottomType)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BottomType)
-        </dd>
-
-    </dl>
+        </div>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<div class="container-fluid details">
+    <div class="jumbotron">
+        <img src="@Html.DisplayFor(model => model.BottomPhoto)" />
+        <div class="btn-group" id="deatilsBtn" role="group">
+            <button type="button" class="btn btn-default">@Html.ActionLink("Edit", "Edit", new { id = Model.BottomID })</button>
+            <button type="button" class="btn btn-default"> @Html.ActionLink("Back to List", "Index")</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 detailsImage">
+            <ul>
+                <li>
+                    Name:
+                </li>
+                <li>
+                    Color:
+                </li>
+                <li>
+                    Season:
+                </li>
+                <li>
+                    Occasion:
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-6 detailsContent">
+            <ul>
+                <li>
+                    @Html.DisplayFor(model => model.BottomName)
+                </li>
+                <li>
+                    @Html.DisplayFor(model => model.BottomColor)
+                </li>
+                <li>
+                    @Html.DisplayFor(model => model.BottomSeason)
+                </li>
+                <li>
+                    @Html.DisplayFor(model => model.BottomOccasion)
+                </li>
+            </ul>
+        </div>
+    </div>
+</div><!-- container End-->
