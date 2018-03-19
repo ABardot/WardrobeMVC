@@ -4,60 +4,101 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<div class="container wardrobeIndex">
+    <div class="row">
+        <div class="col-lg-12 wardrobeHeader">
+            <h2>Bottom Wardrobe</h2>
+            <br />
+            <button class="btn btn-primary wardrobeBtn">@Html.ActionLink("Create New", "Create")</button>
+        </div>
+    </div>
+    @foreach (var item in Model)
+    {
+        <div class="row vdivide">
+            <div class="col-lg-4">
+                <img src="@Html.DisplayFor(modelItem => item.BottomPhoto)" style="height: 200px;" />
+            </div>
+            <div class="col-lg-4 wardrobeContent">
+                <ul>
+                    <li>
+                        <i class="far fa-hand-point-right"></i> @Html.DisplayFor(modelItem => item.BottomName)
+                    </li>
+                    <li>
+                        <i class="far fa-hand-point-right"></i> @Html.DisplayFor(modelItem => item.BottomColor)
+                    </li>
+                    <li>
+                        <i class="far fa-hand-point-right"></i> @Html.DisplayFor(modelItem => item.BottomSeason)
+                    </li>
+                    <li>
+                        <i class="far fa-hand-point-right"></i> @Html.DisplayFor(model => item.BottomOccasion)
+                    </li>
+                    <li>
+                        <i class="far fa-hand-point-right"></i> @Html.DisplayFor(model => item.BottomType)
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default">@Html.ActionLink("Edit", "Edit", new { id = item.BottomID })</button>
+                    <button type="button" class="btn btn-default">@Html.ActionLink("Details", "Details", new { id = item.BottomID })</button>
+                    <button type="button" class="btn btn-default">@Html.ActionLink("Delete", "Delete", new { id = item.BottomID })</button>
+                </div>
+            </div>
+        </div><!-- row vdivide End -->
+    }
+</div><!-- container End-->
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BottomName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BottomPhoto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BottomColor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BottomSeason)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BottomOccasion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BottomType)
+            </th>
+            <th></th>
+        </tr>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomPhoto)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomColor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomSeason)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomOccasion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomType)
-        </th>
-        <th></th>
-    </tr>
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BottomName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BottomPhoto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BottomColor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BottomSeason)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BottomOccasion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BottomType)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.BottomID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.BottomID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.BottomID })
+            </td>
+        </tr>
+    }
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.BottomName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BottomPhoto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BottomColor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BottomSeason)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BottomOccasion)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BottomType)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.BottomID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.BottomID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.BottomID })
-        </td>
-    </tr>
-}
-
-</table>
+    </table>*@

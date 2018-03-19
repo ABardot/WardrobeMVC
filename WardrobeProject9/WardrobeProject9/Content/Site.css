@@ -99,7 +99,6 @@ footer {
 .row {
     margin-top: 20px;
     margin-bottom: 0px;
-  
 }
 
 .row.vdivide [class*='col-']:not(:last-child):after {
