@@ -56,6 +56,37 @@ footer {
     height: 500px;
 }
 
+#orig {
+    box-shadow: 5px 5px 5px grey;
+    height: 500px;
+    width: 360px;
+}
+
+#swap {
+    box-shadow: 5px 5px 5px grey;
+    height: 500px;
+    width: 360px;
+}
+
+.fas.fa-cart-plus.fa-7x {
+   
+}
+
+.captionOrig {
+    padding-top: 210px;
+    padding-left: 100px;
+    text-align: center;
+    font-family: Centaur;
+}
+
+.captionSwap {
+    text-align: center;
+    font-family: Centaur;
+}
+
+
+
+
 .row.landing{
     margin-top: 40px;
 }
@@ -69,11 +100,7 @@ footer {
     padding-top: 10px;
 }
 
-.fas.fa-wrench.fa-10x {
-   height: 300px;
-   padding-left: 100px;
-   padding-top: 80px;
-}
+
 
 .caption {
     text-align: center;

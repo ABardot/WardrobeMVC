@@ -1,10 +1,11 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+ViewBag.Title = "Home Page";
 }
 
 <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
 <div id="main">
-    <h2 onmouseover="myFunction()">Welcome to the closet app</h2>
+<h2 onmouseover="myFunction()">Welcome to the closet app</h2>
 </div>
 
 
@@ -12,36 +13,36 @@
 
 <br />
 <div class="row landing">
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="~/Content/images/carImageOne.PNG" />
-            <div class="caption">
-                <h3>Tops</h3>
-                <p>Click below to see tops</p>
-                <p><a href="/Tops/Index" class="btn btn-primary" role="button"><i class="far fa-hand-point-up fa-2x"></i></a>
-            </div>
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <img src="~/Content/images/carImageOne.PNG" />
+        <div class="caption">
+            <h3>Tops</h3>
+            <p>Click below to see tops</p>
+            <p><a href="/Tops/Index" class="btn btn-primary" role="button"><i class="far fa-hand-point-up fa-2x"></i></a>
         </div>
     </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="~/Content/images/jeans.jpg" />
-            <div class="caption">
-                <h3>Bottoms</h3>
-                <p>Click below to see bottoms</p>
-                <p><a href="/Bottoms/Index" class="btn btn-primary" role="button"><i class="far fa-hand-point-up fa-2x"></i></a>
-            </div>
+</div>
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <img src="~/Content/images/jeans.jpg" />
+        <div class="caption">
+            <h3>Bottoms</h3>
+            <p>Click below to see bottoms</p>
+            <p><a href="/Bottoms/Index" class="btn btn-primary" role="button" ><i class="far fa-hand-point-up fa-2x"></i></a>
         </div>
     </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="~/Content/images/vans.jpg" />
-            <div class="caption">
-                <h3>Shoes</h3>
-                <p>Click below to see shoes</p>
-                <p><a href="/Shoes/Index" class="btn btn-primary" role="button"><i class="far fa-hand-point-up fa-2x"></i></a>
-            </div>
+</div>
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <img src="~/Content/images/vans.jpg" />
+        <div class="caption">
+            <h3>Shoes</h3>
+            <p>Click below to see shoes</p>
+            <p><a href="/Shoes/Index" class="btn btn-primary" role="button"><i class="far fa-hand-point-up fa-2x"></i></a>
         </div>
     </div>
+</div>
 </div>
 <div class="row">
     <div class="col-sm-6 col-md-4">
@@ -66,16 +67,33 @@
         </div>
     </div>
     <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <i class="fas fa-wrench fa-10x"></i>
-            <div class="caption">
-                <h3>Create</h3>
-                <p>Click below to see create a new outfit</p>
-                <p><a href="/Tops/Index" class="btn btn-primary" role="button"><i class="far fa-hand-point-up fa-2x"></i></a>
-            </div>
+            <div class="thumbnail" style=" display:flex" id="orig">
+               
+                <div class="captionOrig">
+                    <i class="fas fa-cart-plus fa-7x"></i>
+                    <h3>Add more clothes</h3>
+                    <p>Click below to go shopping!</p>
+                    <p><a class="btn btn-primary" role="button" onmouseover="overBtn(this)" onmouseout="outBtn(this)" onclick="SwapDivsWithClick('orig','swap')"><i class="fas fa-cart-plus fa-2x"></i></a>
+                </div>
         </div>
     </div>
-</div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail" style=" display:none" id="swap">
+            <div class="captionSwap">
+                <h2>Please login or join to reserve a site</h2>
+                <form action="/action_page.php">
+                    Type in the site you want to go to:<br>
+                    <input type="text" name="firstname" value="">
+                    <br>
+                    <button type="button" class="btn" onmouseover="overBtn(this)" onmouseout="outBtn(this)" onclick="SwapDivsWithClick('orig', 'swap'); Redirect();">Shop Now!</button>
+                    <output name="result" id="confirmResponse"></output>
+                </form>
+              </div>
+          </div>
+      </div>
+</div><!-- row end -->
+
+
 
 
 
