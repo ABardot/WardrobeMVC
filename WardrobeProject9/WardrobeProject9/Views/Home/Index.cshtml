@@ -80,11 +80,12 @@ ViewBag.Title = "Home Page";
     <div class="col-sm-6 col-md-4">
         <div class="thumbnail" style=" display:none" id="swap">
             <div class="captionSwap">
-                <h2>Please login or join to reserve a site</h2>
+                <h2>Please type in your favorite retailer!</h2>
                 <form action="/action_page.php">
                     Type in the site you want to go to:<br>
                     <input type="text" name="firstname" value="">
-                    <br>
+                    <br/>
+                    <br />
                     <button type="button" class="btn" onmouseover="overBtn(this)" onmouseout="outBtn(this)" onclick="SwapDivsWithClick('orig', 'swap'); Redirect();">Shop Now!</button>
                     <output name="result" id="confirmResponse"></output>
                 </form>
