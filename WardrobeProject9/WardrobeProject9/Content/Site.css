@@ -206,3 +206,21 @@ footer {
 #deatilsBtn {
    padding-left: 450px;
 }
+
+
+
+
+#myDIV {
+    width: 100px;
+    height: 100px;
+    background: grey;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+    box-shadow: 5px 5px 5px #000;
+    color: #000;
+}
+
+#myDIV:hover {
+    width: 600px;
+}
+
