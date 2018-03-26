@@ -8,6 +8,7 @@ ViewBag.Title = "Home Page";
 <h2 onmouseover="myFunction()">Welcome to the closet app</h2>
 </div>
 
+<p id="para" onmouseover="changeText()" onmouseout="normaltext()">The app that organizes your closet</p>
 
 <div id="myDIV"></div>
 
@@ -62,7 +63,7 @@ ViewBag.Title = "Home Page";
             <div class="caption">
                 <h3>Outfits</h3>
                 <p>Click ad a color to outfits</p>
-                <input id="buttonloc" type="submit" value="Submit" onmouseover="overBtn(this)" onmouseout="outBtn(this)" onclick="GetVilla(); SwapDivsWithClick('villachoice', 'villaswap');">
+                <input id="buttonloc" type="submit" value="Click" onmouseover="overBtn(this)" onmouseout="outBtn(this)" onclick="GetVilla(); SwapDivsWithClick('villachoice', 'villaswap');">
             </div>
         </div>
     </div>

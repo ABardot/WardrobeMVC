@@ -247,4 +247,11 @@ footer {
 #myDIV:hover {
     width: 600px;
 }
+#main p {
+    text-align: center;
+    font-family: 'Californian FB';
+}
 
+#para {
+    text-align: center;
+}
