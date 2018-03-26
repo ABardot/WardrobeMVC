@@ -237,7 +237,7 @@ footer {
 #myDIV {
     width: 100px;
     height: 100px;
-    background: grey;
+    background: blue;
     -webkit-transition: width 2s;
     transition: width 2s;
     box-shadow: 5px 5px 5px #000;
@@ -247,6 +247,7 @@ footer {
 #myDIV:hover {
     width: 600px;
 }
+
 #main p {
     text-align: center;
     font-family: 'Californian FB';
@@ -254,4 +255,9 @@ footer {
 
 #para {
     text-align: center;
+}
+
+.fab.fa-accessible-icon.fa-5x {
+    float: right;
+    padding-top: 5px;
 }

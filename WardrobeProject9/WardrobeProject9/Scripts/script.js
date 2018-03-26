@@ -31,6 +31,7 @@ function outBtn(x) {
     x.style.color = "black";
 }
 
+// Switch for the Add more clothes thumbnail
 function SwapDivsWithClick(div1, div2) {
     d1 = document.getElementById(div1);
     d2 = document.getElementById(div2);
@@ -56,7 +57,7 @@ function Redirect(x) {
     }
 }
 
-
+// This propmts the user to choose a color or shirt for the array
 function GetVilla() {
     var villaArray = new Array(0);
     var userResponse = confirm('Would you like to check the availability of a colors?'); // Prompt user
@@ -101,11 +102,23 @@ function GetVilla() {
     }
 }
 
+// Function for the welcome <p> in landing page
 function changeText() {
     var text = document.getElementById("para").style.fontSize = "15px";
+    var text = document.getElementById("para").style.color = "blue";
 }
 
 function normaltext() {
     var text = document.getElementById("para").style.fontSize = "25px";
+    var text = document.getElementById("para").style.color = "green";
 }
 
+// Homework JavaScript 
+document.getElementById("myDIV").addEventListener("webkitTransitionEnd", myFunction1);
+
+document.getElementById("myDIV").addEventListener("transitionend", myFunction1);
+
+function myFunction1() {
+    this.innerHTML = "transitionend event occured - The transition has completed";
+    this.style.backgroundColor = "pink";
+}
