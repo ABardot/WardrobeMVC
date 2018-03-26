@@ -50,3 +50,27 @@ function Redirect(x) {
         win.focus();
     }
 }
+
+function GetVilla() {
+    var villaArray = new Array(0);
+    var userResponse = confirm('Would you like to check the availability of a colors?');
+    while (userResponse) {
+        var villa = prompt('Please enter the color');
+        userResponse = confirm('Would you like to add another color?');
+        villaArray.push(villa);
+    }
+    var d = new Date();
+    var m = d.getMonth();
+    var x = document.getElementById("villaswap");
+    if (m > 0 && m < 4) {
+        x.getElementsByTagName('p')[1].innerText = villaArray[0];
+    } else if (m > 3 && m < 7) {
+        x.getElementsByTagName('p')[1].innerText = villaArray[1];
+    } else if (m > 6 && m < 10) {
+        x.getElementsByTagName('p')[1].innerText = villaArray[2];
+    } else if (m > 9 && m < 13) {
+        x.getElementsByTagName('p')[1].innerText = villaArray[3];
+    } else {
+        x.getElementsByTagName('p')[1].innerText = 'Sorry we have no villas available';
+    }
+}
